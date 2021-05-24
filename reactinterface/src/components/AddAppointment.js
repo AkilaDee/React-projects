@@ -1,7 +1,7 @@
 import { BiCalendarPlus } from "react-icons/bi";
 import { useState } from 'react';
 
-const AddOrder = ({ onSendAppointment, lastId }) => {
+const AddAppointment = ({ onSendAppointment, lastId }) => {
   const clearData = {
     ownerName: '',
     petName: '',
@@ -30,7 +30,7 @@ const AddOrder = ({ onSendAppointment, lastId }) => {
       <button onClick={() => { setToggleForm(!toggleForm) }}
         className={`bg-blue-400 text-white px-2 py-3 w-full text-left rounded-t-md
         ${toggleForm ? 'rounded-t-md' : 'rounded-md'}`}>
-        <div><BiCalendarPlus className="inline-block align-text-top" />  Add Order</div>
+        <div><BiCalendarPlus className="inline-block align-text-top" />  Add Appointment</div>
       </button>
       {
         toggleForm &&
@@ -108,4 +108,4 @@ const AddOrder = ({ onSendAppointment, lastId }) => {
   )
 }
 
-export default AddOrder
+export default AddAppointment

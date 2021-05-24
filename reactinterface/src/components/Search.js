@@ -61,4 +61,3 @@ const Search = ({ query, onQueryChange, sortBy, onSortByChange, orderBy, onOrder
 }
 
 export default Search
-// export default DropDown
